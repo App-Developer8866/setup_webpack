@@ -45,6 +45,14 @@ window.checkBox = (index) => {
 };
 
 function listTasks() {
+  Promise.then(
+    (foo) => {
+      console.log('foo');
+    },
+    (bar) => {
+      console.log('bar');
+    },
+  );
   tasks.forEach((i) => {
     if (i.completed) {
       Tasks.innerHTML += `<li>
