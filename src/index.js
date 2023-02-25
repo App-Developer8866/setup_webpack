@@ -1,15 +1,13 @@
-/* eslint-disable import/no-mutable-exports */
-/* eslint-disable import/prefer-default-export */
-/* eslint-disable import/no-cycle */
 import './style.css';
-import * as allFun from './modules/functions.js';
+import setCheck from './modules/functions.js';
 
 const Tasks = document.querySelector('.tasks');
 const Input = document.querySelector('form input');
 const AddBtn = document.querySelector('form button');
 const Span = document.querySelector('span');
+const clearAll = document.querySelector('#clearAll');
 
-export let tasks = JSON.parse(localStorage.getItem('tasks')) === null ? [] : JSON.parse(localStorage.getItem('tasks'));
+const tasks = JSON.parse(localStorage.getItem('tasks')) === null ? [] : JSON.parse(localStorage.getItem('tasks'));
 
 AddBtn.addEventListener('click', () => {
   if (Input.value === '') {
@@ -21,23 +19,25 @@ AddBtn.addEventListener('click', () => {
       index: tasks.length + 1,
     };
     tasks.push(obj);
+    for (let i = 1; i <= tasks.length; i += 1) {
+      tasks[i - 1].index = i;
+    }
     localStorage.setItem('tasks', JSON.stringify(tasks));
     window.location.reload();
   }
 });
 
-window.clearAll = () => {
-  tasks = tasks.filter((elem) => elem.completed === false);
-  // eslint-disable-next-line no-plusplus
-  for (let i = 1; i <= tasks.length; i++) {
+clearAll.addEventListener('click', () => {
+  const tasksArr = tasks.filter((elem) => elem.completed === false);
+  for (let i = 1; i <= tasksArr.length; i += 1) {
     tasks[i - 1].index = i;
   }
-  localStorage.setItem('tasks', JSON.stringify(tasks));
+  localStorage.setItem('tasks', JSON.stringify(tasksArr));
   window.location.reload();
-};
+});
 
 window.checkBox = (index) => {
-  allFun.setCheck(index);
+  setCheck(index);
 };
 
 function listTasks() {
@@ -63,3 +63,5 @@ function listTasks() {
 }
 
 listTasks();
+
+export default tasks;
