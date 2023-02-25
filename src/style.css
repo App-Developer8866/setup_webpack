@@ -84,11 +84,28 @@ form i {
   border-bottom: 1px solid gray;
 }
 
+.checkTask {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+}
+
 .task {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 95%;
+}
+
+.task input {
+  border: none;
+  padding: 2px 5px;
+}
+
+.checkTask input {
+  border: none;
+  padding: 2px 5px;
 }
 
 ::placeholder {

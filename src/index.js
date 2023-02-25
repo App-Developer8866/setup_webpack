@@ -1,10 +1,6 @@
-/* eslint-disable import/no-unresolved */
-/* eslint-disable import/no-cycle */
-/* eslint-disable no-unused-vars */
 /* eslint-disable import/no-mutable-exports */
-/* eslint-disable no-plusplus */
-// eslint-disable-next-line no-unused-vars
-import _ from 'lodash';
+/* eslint-disable import/prefer-default-export */
+/* eslint-disable import/no-cycle */
 import './style.css';
 import * as allFun from './modules/functions.js';
 
@@ -13,7 +9,6 @@ const Input = document.querySelector('form input');
 const AddBtn = document.querySelector('form button');
 const Span = document.querySelector('span');
 
-// eslint-disable-next-line import/prefer-default-export, prefer-const
 export let tasks = JSON.parse(localStorage.getItem('tasks')) === null ? [] : JSON.parse(localStorage.getItem('tasks'));
 
 AddBtn.addEventListener('click', () => {
@@ -33,6 +28,7 @@ AddBtn.addEventListener('click', () => {
 
 window.clearAll = () => {
   tasks = tasks.filter((elem) => elem.completed === false);
+  // eslint-disable-next-line no-plusplus
   for (let i = 1; i <= tasks.length; i++) {
     tasks[i - 1].index = i;
   }
@@ -45,20 +41,12 @@ window.checkBox = (index) => {
 };
 
 function listTasks() {
-  Promise.then(
-    (foo) => {
-      console.log('foo');
-    },
-    (bar) => {
-      console.log('bar');
-    },
-  );
   tasks.forEach((i) => {
     if (i.completed) {
       Tasks.innerHTML += `<li>
     <input type="checkbox" onclick="checkBox(${i.index})" checked/>
-    <div class="task">
-      <p>${i.description}</p>
+    <div class="checkTask">
+    <input type="text" value="${i.description}" />
       <i class="fa-solid fa-ellipsis-vertical"></i>
     </div>
   </li>`;
@@ -66,7 +54,7 @@ function listTasks() {
       Tasks.innerHTML += `<li>
     <input type="checkbox" onclick="checkBox(${i.index})"/>
     <div class="task">
-      <p>${i.description}</p>
+      <input type="text" value="${i.description}" />
       <i class="fa-solid fa-ellipsis-vertical"></i>
     </div>
   </li>`;
