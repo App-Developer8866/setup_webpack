@@ -1,168 +1,181 @@
+
+
 <a name="readme-top"></a>
-
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-=======
-
-## Capstone-Project: Programming Competion-page
-
-
-[Loom Video Presentation]()
->>>>>>> efb449574a89f51f74a8b2fc2fbc8a9489b5f399
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-After you're finished please remove all the comments and instructions!
--->
 
 <div align="center">
 
-  
-  <br/>
-
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>To Do List</b></h3>
 
 </div>
-
-<!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
+# 📖 Awesome Book<a name="about-project"></a>
 
-# 📖 Project: Todo List <a name="about-project"></a>
+**To Do List** is about creating a web page to add and complete tasks.
+## 🛠 Built With <a name="built-with"> HTML, CSS & JavaScript</a>
 
-**[Project: Todo List]** is about creating a web page to add and delete items.
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Frontend</summary>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ul>
+</details>
 
 
+### Key Features <a name="key-features"></a>
 
-## 🛠 Built With <a name="built-with"></a>
-    HTML
-    CSS
-    Javascript
-    Webpack
-
-
-## 🛠 Live Demo <a name="live-demo"></a>
-    Todo List App live [link](https://app-developer8866.github.io/todoapp.github.io/)
-
+- **Add new task**
+- **Complete task**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-<!-- GETTING STARTED -->
+## 🚀 Live Demo <a name="coming soon"></a>
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-- Create a local directory that you want to clone the repository.
-
-- Open the command prompt in the created directory.
-
-- On the terminal run this command git clone https://github.com/App-Developer8866/todo_list_webpack.git
-
-- Go to the repository folder using command prompt cd Awesome-books.
-
-- Install the dev dependencies for linters run npm install.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
-
--Google chrome
-
--Internet Explorer
-
--Any broswer
+In order to run this project you need to run:
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+```sh
+ npm install
+```
+
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-- Open the command prompt in the created directory.
 
-- On the terminal run this command git clone https://github.com/App-Developer8866/todo_list_webpack.git
+```sh
+  cd awesome-book-new
+  git clone git@github.com:App-Developer8866/setup_webpack.git
+```
 
-- Go to the repository folder using command prompt cd Awesome-books.
+### Install
 
-- Install the dev dependencies for linters run npm install.
+Install this project with:
+
+
+
+```sh
+  cd setup_webpack
+```
+
+
+### Usage
+
+To run the project, execute the following command:
+
+
+```
+  npm start
+```
+
+### Testing
+
+To run the project, execute the following command:
+
+```
+  npx eslint .
+```
+
+### Deployment
+
+You can deploy this project using:
+
+- GitHub Pages
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- Author -->
+## 👥 Authors <a name="authors"></a>
 
 👤 **Author**
 
 - GitHub: [@App-Developer8866](https://github.com/App-Developer8866/)
 - Twitter: [@MMuttrafRasool](https://twitter.com/MMuttrafRasool)
 - LinkedIn: [Muhammad Muttraf Rasool](https://www.linkedin.com/in/muhammad-muttraf-rasool-421819202)
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+## 🔭 Future Features <a name="future-features"></a>
 
+- **Responsive Application**
+- **Github Deployment**
 
-<!-- CONTRIBUTING -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/App-Developer8866/todo_list_webpack/issues).
+Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-Give a ⭐️ if you like this project!
+If you like this project, please support by contributing to the codebase
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGEMENTS -->
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
+I would like to thank the entire microverse team for the inspiration h=behinf this project.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## ❓ FAQ <a name="faq"></a>
+
+- **Will there be a desktop version of this project**
+
+  - Yes, there will certainly be a desktop version to aid desktop users in having a friendly UX experience on the website
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
