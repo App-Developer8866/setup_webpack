@@ -8,6 +8,7 @@ const Tasks = document.querySelector('.tasks');
 const Input = document.querySelector('form input');
 const AddBtn = document.querySelector('form button');
 const Span = document.querySelector('span');
+const clearAll = document.querySelector('#clearAll');
 
 export let tasks = JSON.parse(localStorage.getItem('tasks')) === null ? [] : JSON.parse(localStorage.getItem('tasks'));
 
@@ -26,7 +27,7 @@ AddBtn.addEventListener('click', () => {
   }
 });
 
-window.clearAll = () => {
+clearAll.addEventListener('click', () => {
   tasks = tasks.filter((elem) => elem.completed === false);
   // eslint-disable-next-line no-plusplus
   for (let i = 1; i <= tasks.length; i++) {
@@ -34,7 +35,7 @@ window.clearAll = () => {
   }
   localStorage.setItem('tasks', JSON.stringify(tasks));
   window.location.reload();
-};
+});
 
 window.checkBox = (index) => {
   allFun.setCheck(index);
